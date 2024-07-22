@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Quiz App</title>
+</head>
+<body>
+    <div class="section">
+        <h1>Quiz App</h1>
+        <div class="container">
+            <h2>In web design, what does CSS stand for?</h2>
+            <div class="choice">
+                <div class="option1" id="option">
+                    <button class="opt optn1" id="optionlist1" type="submit" onclick="Incorrect1()">A</button>
+                    <button class="ans answr1" id="Answer1" type="submit" onclick="Incorrect1()">Counter Strike: Source</button>
+                </div>
+                <div class="option2" id="option">
+                    <button class="opt optn1" id="optionlist2" type="submit" onclick="Incorrect2()">B</button>
+                    <button class="ans answr2" id="Answer2" type="submit" onclick="Incorrect2()">Corrective Style Sheet</button>
+                </div>
+                <div class="option3" id="option">
+                    <button class="opt optn3" id="optionlist3" type="submit" onclick="Incorrect3()">C</button>
+                    <button class="ans answr3" id="Answer3" type="submit" onclick="Incorrect3()">Computer Style Sheet</button>
+                </div>
+                <div class="option4" id="option">
+                    <button class="opt1" id="optionlist" type="submit" onclick="Correct()">D</button>
+                    <button class="ans1" id="Answer" type="submit" onclick="Correct()">Cascading Style Sheet</button>
+                </div>
+            </div>
+            <div class="butrow">
+                <button class="submit" onclick="submit()">Submit</button>
+                <button class="reset" onclick="reset()">Reset</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
