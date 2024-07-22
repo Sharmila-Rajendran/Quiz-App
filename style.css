@@ -1,25 +1,43 @@
 body{
     margin:0px;
     padding: 0px;
+    background-image: url(Images/programming-1873854_1280.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 .section{
-    margin: 50px 300px;
-    width: 60%;
+    margin: 50px 350px;
+    width: 50%;
     padding: 30px;
 }
 
 .section h1{
     text-align: center;
-    color: crimson;
+    color: white;
+    animation: fadeIn 1s ease-in;
 }
 
 .container{
-    background-color: antiquewhite;
+    background-color:white;
     margin: 20px;
     padding: 20px;
     border: none;
-    box-shadow: 5px 5px 5px 5px grey;
+    border-radius: 20px;
+    box-shadow: 8px 8px 8px 8px rgb(61, 61, 61);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    animation: fadeIn 1s ease-in;
+}
+
+.container h2{
+    color: crimson;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 2px 2px pink;
 }
 
 .choice{
@@ -28,21 +46,59 @@ body{
 
 .option1,.option2,.option3,.option4{
     padding:10px;
+    animation: fadeIn 1s ease-in;
 }
 
 button{
     padding: 10px;
+    border: none;
+    cursor: pointer;
 }
 
 .opt,.opt1{
     width: 7%;
     background-color: rgb(228, 80, 110);
-    border: none;
+    transition: background-color 0.5s ease;
 }
 
 .ans,.ans1{
-    width: 60%;
+    width: 80%;
     text-align: left;
-    background-color: white;
-    border: none;
+    background-color:beige;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.butrow{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    animation: fadeIn 1s ease-in;
+}
+
+.submit,.reset{
+    width: 100px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+.submit{
+    background-color: rgb(80, 193, 228);
+    transition: background-color 0.5s ease;
+}
+
+.reset{
+    background-color: gold;
+    transition: background-color 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
