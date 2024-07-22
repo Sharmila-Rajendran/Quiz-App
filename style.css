@@ -1,0 +1,48 @@
+body{
+    margin:0px;
+    padding: 0px;
+}
+
+.section{
+    margin: 50px 300px;
+    width: 60%;
+    padding: 30px;
+}
+
+.section h1{
+    text-align: center;
+    color: crimson;
+}
+
+.container{
+    background-color: antiquewhite;
+    margin: 20px;
+    padding: 20px;
+    border: none;
+    box-shadow: 5px 5px 5px 5px grey;
+}
+
+.choice{
+    padding: 10px;
+}
+
+.option1,.option2,.option3,.option4{
+    padding:10px;
+}
+
+button{
+    padding: 10px;
+}
+
+.opt,.opt1{
+    width: 7%;
+    background-color: rgb(228, 80, 110);
+    border: none;
+}
+
+.ans,.ans1{
+    width: 60%;
+    text-align: left;
+    background-color: white;
+    border: none;
+}
