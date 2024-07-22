@@ -19,3 +19,29 @@ function Correct(){
     document.querySelector(".ans1").style.backgroundColor='green';
     document.querySelector(".ans1").style.color='white';
 }
+
+function reset(){
+    const buttons = document.querySelectorAll('.opt, .ans, .opt1, .ans1');
+    buttons.forEach(button => {
+        button.style.backgroundColor = '';
+        button.style.color = '';
+    });
+}
+
+function isOptionSelected() {
+    const options = document.querySelectorAll('.opt, .ans, .opt1, .ans1');
+    for (let i = 0; i < options.length; i++) {
+        if (options[i].style.backgroundColor === 'red' || options[i].style.backgroundColor === 'green') {
+            return true;
+        }
+    }
+    return false;
+}
+
+function submit() {
+    if (isOptionSelected()) {
+        alert("Congrats! You have completed the quiz!");
+    } else {
+        alert("Please select an option before submitting.");
+    }
+}
